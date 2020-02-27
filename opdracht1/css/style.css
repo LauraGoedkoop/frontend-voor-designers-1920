@@ -1,16 +1,128 @@
-html{
-  box-sizing: border-box; /* https://css-tricks.com/box-sizing/ */
-  background:#eee;
-  background: url("../img/flagF4D.png") center no-repeat;
+html {
+
+  background: #000;
+
 }
-*, *:before, *:after {
+
+header img {
+  margin-left: 2vw;
+  width: 10%;
+
+}
+
+ul{
+  position:fixed;
+  right: 5%;
+  top: 2%;
+ 
+}
+
+ul li{
+  color:white;
+  list-style-type: none;
+  font-family: sans-serif;
+}
+
+#lijst{
+  position: fixed;
+  right: 2%;
+  top:3%;
+  width: 2%;
+}
+
+
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-body{
-  max-width: 30em;
+
+body {
+  /* max-width: 30em;
   margin: 1em auto;
   padding: 1em;
   background: #fff;
   border-radius: 1em;
   box-shadow: 0.5em 0.5em 0.5em rgba(68,68,68,0.6);
+  */
+}
+
+.column1 {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-column-gap: 10px;
+  margin: 0 auto;
+  margin-top: 4vh;
+
+}
+
+.column1 img {
+  width: 100%;
+}
+
+section:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+
+.heart {
+  transition: fill 1s ease;
+  fill: black;
+}
+
+.heart:hover {
+  transition: fill 1s ease;
+  fill: red;
+}
+
+.heart2 {
+  transition: fill 1s ease;
+  fill: black;
+}
+
+.heart2:hover {
+  transition: fill 1s ease;
+  fill: red;
+}
+
+.heart3 {
+  transition: fill 1s ease;
+  fill: black;
+
+}
+
+.heart3:hover {
+  transition: fill 1s ease;
+  fill: red;
+
+}
+
+.heart4 {
+  transition: fill 1s ease;
+  fill: black;
+
+}
+
+.heart4:hover {
+  transition: fill 1s ease;
+  fill: red;
+
+}
+
+.rood {
+  transition: fill 1s ease;
+  fill: red;
+}
+
+
+.like {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  left: 80%;
+  top: -90%;
+
 }
