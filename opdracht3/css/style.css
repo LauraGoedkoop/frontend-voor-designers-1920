@@ -1,48 +1,81 @@
 /* || general styles */
 
-html {
-  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+body{
+  background-color: #0f171e;
 }
 
-body {
-  width: 800px;
+.column1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
   margin: 0 auto;
+  margin-top: 4vh;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  
+  
 }
 
-h1, h2 {
-  font-family: 'Faster One', cursive;
+.column1 img{
+  width: 100%;
 }
 
-/* header styles */
 
-h1 {
-  font-size: 4rem;
-  text-align: center;
+section{
+  position: relative;
+  
 }
 
-header p {
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-align: center;
+section:hover > article, section:focus > article{
+  display: block;
+  transition-duration: 1s;
+  
 }
 
-/* section styles */
-
-section article {
-  width: 33%;
-  float: left;
+section > article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: red;
+  width: 100%;
+  height: 100%;
+  display: none;
+  overflow-y: auto;
+  padding: 10px;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  
+  
+ 
 }
 
-section p {
-  margin: 5px 0;
+section > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
 }
 
-section ul {
-  margin-top: 0;
+
+
+
+
+
+
+
+
+
+/*
+
+#foto3{
+  width: 103.5%;
 }
 
-h2 {
-  font-size: 2.5rem;
-  letter-spacing: -5px;
-  margin-bottom: 10px;
+#foto6{
+  width: 101%;
 }
+
+*/
+
