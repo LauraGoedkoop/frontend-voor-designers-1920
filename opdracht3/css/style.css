@@ -21,6 +21,11 @@ body{
   width: 100%;
 }
 
+#logo{
+  width: 10%;
+  margin-bottom: 30px;
+}
+
 
 section{
   position: relative;
@@ -43,12 +48,23 @@ section > article {
   display: none;
   overflow-y: auto;
   padding: 10px;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.9);
   color: white;
   font-family: 'Quicksand', sans-serif;
-  
-  
+   
  
+}
+
+section > article > h2{
+  font-family: 'Anton', sans-serif;
+}
+
+section > article > h3{
+  text-decoration: underline;
+}
+
+section > article > h4{
+  margin-top: -10px;
 }
 
 section > img{
@@ -58,6 +74,10 @@ section > img{
   
 }
 
+section > article > iframe{
+  height: 150px;
+  width: 270px;
+}
 
 
 
