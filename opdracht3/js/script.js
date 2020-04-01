@@ -68,10 +68,10 @@ function showCover(movies) {
   genres.textContent = movies[i].genres;
   article.appendChild(genres);  
     
-  var reviews = document.createElement('p');  
-  reviews.textContent = reviews[i].score;
-  article.appendChild(reviews); 
-  console.log(reviews.score);  
+//  var reviews = document.createElement('p');  
+//  reviews.textContent = reviews[i].score;
+//  article.appendChild(reviews); 
+//  console.log(reviews.score);  
   
   var plot = document.createElement('p');
   plot.textContent = movies[i].plot;
