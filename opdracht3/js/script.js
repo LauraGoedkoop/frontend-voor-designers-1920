@@ -6,7 +6,8 @@
 const header = document.querySelector('header');
 const section = document.querySelector('section');
 const div = document.querySelector('.column1');
-
+const genreKeuze = document.querySelector('#genre-keuze');
+let data = [];
 
 // url waar wj de data vandaan halen
 var requestURL = 'https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/movies.json';
@@ -24,15 +25,52 @@ request.responseType = 'json';
 //verzoek versturen
 request.send();
 
+
 // wacht op response van de server
 request.onload = function () {
   console.log(request.response);
   console.log(request.response[3].release_date);
   //var films = request.response;
   //  titelHeader(films);
-  showCover(request.response);
+ data = request.response;
+  showCover(data);
+
 
 }
+
+ 
+
+
+genreKeuze.addEventListener('change', filterFilms);
+
+
+
+
+function filterFilms(event) {
+  const genre = event.target.value;
+  const filtered = [];
+  
+  for (film of data){
+    const filmGenre = film.genres[0].toLowerCase();   
+    
+    if (filmGenre === genre || genre === 'alles') {
+     filtered.push(film);
+    }
+  }
+  
+  showCover(filtered);
+}
+
+
+
+function getDataByGenre(genre) {
+  
+}
+
+
+
+
+
 
 //function titelHeader(jsonObj) {
 //  const myH1 = document.createElement('h1');
@@ -48,7 +86,10 @@ function showCover(movies) {
 //  myH1.setAttribute("class", "boe");
 //  header.appendChild(myH1);
 
-
+while(div.firstChild){
+  div.removeChild(div.firstChild);
+}
+  
   for (var i = 0; i < movies.length; i++) {
 
     var section = document.createElement('section');
@@ -78,11 +119,17 @@ function showCover(movies) {
     
     var trailer = document.createElement('iframe');
     trailer.setAttribute("src", movies[i].trailer);
+    trailer.setAttribute("allowautoplay", false);
     article.appendChild(trailer);
-
+    
     div.appendChild(section);
 
   }
+  
+  
+  
+  
+
 
 
   //
