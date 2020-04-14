@@ -139,12 +139,7 @@ while(div.firstChild){
 
   }
   
-  
-  
-  
-
-
-
+ 
   //
   //  var cover = document.createElement('img');
   //  cover.setAttribute("src", movies[1].cover);
