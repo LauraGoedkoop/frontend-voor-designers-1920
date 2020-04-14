@@ -25,13 +25,26 @@ request.responseType = 'json';
 //verzoek versturen
 request.send();
 
+function doneloading() {
+  Array.from(document.getElementsByClassName("remove")).forEach((element) => {
+    //    console.log(target.classList[1], Array.from(element.classList));
+    element.classList.remove("remove");
+  });
+}
+
 
 // wacht op response van de server
 request.onload = function () {
-  console.log(request.response);
-  console.log(request.response[3].release_date);
+//  console.log(request.response);
+//  console.log(request.response[3].release_date);
   //var films = request.response;
   //  titelHeader(films);
+  
+   setTimeout(function () {
+    doneloading();
+    document.querySelector(".loading").classList.add("remove");
+    showMovies(request.response);
+  }, 2000);
  data = request.response;
   showCover(data);
 

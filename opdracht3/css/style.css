@@ -134,6 +134,23 @@ input[type='radio']:after {
 
 
 
+.remove {
+  display: none;
+}
+
+.loading {
+  background-color: #003243 ;
+  height: 100%;
+  width: 100%;
+}
+
+.loading img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+
 
 /*
 
