@@ -13,5 +13,5 @@ Ook kan de gebruiker de films filteren op genre. Als je de website opent zal dez
 
 Ik wilde graag de filter kunnen bedienen met de pijltjes toetsen, dit is mij helaas niet gelukt. 
 
-Verder is alles mij gelukt om voor elkaar te krijgen met code. YESS!
+Verder is alles mij gelukt om voor elkaar te krijgen met code. YESS!!
 
