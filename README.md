@@ -1,17 +1,17 @@
 # Frontend voor Designers 1920
 
-![alt text](./img/F4Dsplash.png "Frontend voor Design Splash")
+Voor de laatste opdracht heb ik de Json gebruikt van Koop zelf. 
+Deze Json staat vol met films, trailers , reviews en meer. 
 
-In het vak Frontend voor Designers leer je hoe je met HTML, CSS en Javascript prototypes kunt maken om je ontwerpideeën te testen in een browser. We gaan animeren, responsive layouts uitproberen en interactie coderen ...
+Ik heb met deze Json een eigen 'amazon prima' gemaakt. 
+Als de gebruiker op de website komt krijgt de gebruiker eerst een loading state te waardoor de gebruiker het gevoel krijgt dat de nieuwste films voor hem worden opgehaald. 
 
+Omdat we allemaal toch een beetje op het uiterlijk oordelen zijn de covers van de films goed te zien. Pas als de gebruiker een cover interessant vindt komt verdere informatie naar voren als hij met z'n muis over de cover heen hovert. 
+Op dat moment kunnen ze ook de trailer van de film bekijken. 
 
-Het vak bestaat uit 3 opdrachten:
+Ook kan de gebruiker de films filteren op genre. Als je de website opent zal deze altijd op alle genres staan. 
 
-1. [Opdracht 1: Een Micro-interactie uitwerken en testen](opdracht1/)
-2. [Opdracht 2: Een interactie uitwerken voor verschillende gebruikers input](opdracht2/)
-3. [Opdracht 3: Een interactie uitwerken met externe data](opdracht3/)
+Ik wilde graag de filter kunnen bedienen met de pijltjes toetsen, dit is mij helaas niet gelukt. 
 
+Verder is alles mij gelukt om voor elkaar te krijgen met code. YESS!
 
----
-- [Markup cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-- [Getting started with GitHub Pages](https://guides.github.com/features/pages/)
